@@ -1,5 +1,7 @@
 To validate changes use command:
 
-    kubectl get pods -o wide
+    kubectl get pods -n todoapp -o wide 
 
-There you can see which pod uses which node 
+    kubectl get pods -n mysql -o wide 
+    
+    kubectl get nodes -0 wide 

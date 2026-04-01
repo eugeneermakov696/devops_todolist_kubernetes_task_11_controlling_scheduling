@@ -29,11 +29,13 @@ spec:
             topologyKey: "kubernetes.io/hostname"
         nodeAffinity:
           preferredDuringSchedulingIgnoredDuringExecution:
-          - matchExpressions:
-            - key: app
-              operator: In
-              values:
-              - todoapp
+          - weight: 1
+            preference:
+              matchExpressions:
+              - key: app
+                operator: In
+                values:
+                - todoapp
       containers:
       - name: todoapp
         image: ikulyk404/todoapp:4.0.1
