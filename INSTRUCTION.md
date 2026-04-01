@@ -4,4 +4,4 @@ To validate changes use command:
 
     kubectl get pods -n mysql -o wide 
     
-    kubectl get nodes -0 wide 
+    kubectl get nodes -o wide 
